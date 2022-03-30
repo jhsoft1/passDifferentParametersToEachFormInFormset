@@ -1,0 +1,9 @@
+   <form method="post" action="">
+      {% for form in formset %}
+        <h2>Form number {{ forloop.counter0 }}</h2>
+         {{ form.q_text }}
+        {{ form.as_p }}
+        <hr>
+      {% endfor %}
+      <input type='submit' value="Submit">
+      </form>
